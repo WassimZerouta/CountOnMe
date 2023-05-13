@@ -12,12 +12,12 @@ import Foundation
 struct Calc {
     
     // Define variable to init
-    let first: Int
+    let first: Float
     let operand: Operand
-    let second: Int
+    let second: Float
     
     // Select the operand based on the Operand enum
-    var calcul: Int {
+    var calcul: Float {
         switch operand {
         case .multiply:
             return first * second
@@ -30,7 +30,7 @@ struct Calc {
         }
     }
     
-    // Operand enul
+    // Operand enum
     enum Operand {
         case multiply
         case divide
@@ -39,7 +39,7 @@ struct Calc {
     }
     
     // Init
-    init(first: Int, operand: Operand, second: Int) {
+    init(first: Float, operand: Operand, second: Float) {
         self.first = first
         self.operand = operand
         self.second = second
